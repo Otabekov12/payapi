@@ -1,4 +1,4 @@
-const elHamburger =  document.querySelector('.header__menu-button')
+const elHamburger =  document.querySelector('.nav__button')
 const elHeader  = document.querySelector('.header')
 
  

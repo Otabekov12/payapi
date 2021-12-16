@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.min.css">
-    <title>PayAPI</title>
+    <title>Payapi</title>
 </head>
 <body>
     
@@ -34,7 +34,7 @@
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a class="nav__link " href="index.html"> Pricing </a>
+                                <a class="nav__link " href="pricing.html"> Pricing </a>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="about.html"> About </a>
@@ -60,39 +60,43 @@
         
         <section class="hero">
             <div class="container">
-                <div class="hero__info">
-                    <h1 class="hero__heading">
-                        Start building with our APIs for absolutely free.
-                    </h1>
-                    
-                    <form  action="https://echo.htmlacademy.ru/" method="post">
-                        
-                        <div class="hero__wrapper">
-                            <input 
+                <div class="hero__inner">
+                    <form class="form" action="https://echo.htmlacademy.ru/" autocomplete="off" spellcheck="false" method="post">
+                        <h1 class="hero__heading">Start building with our APIs for absolutely free.</h1>
+                        <label class="hero__label">
+                            
+                            <input
                             class="hero__input"
                             type="email"
                             placeholder="Enter email address"
-                            name="email"
-                            required />
+                            name="user_email"
+                            required
                             
-                            <button class="hero__button header__button" type="submit">
-                                <p class="button_paragraph"> Schedule a Demo</p>
+                            />
+                            <button class="header__button hero__input__button"   type="submit">
+                                <p class="header__button__paragraf">Schedule a Demo</p>
                             </button>
-                            
-                        </div>
+                        </label>
+                        <p class="hero__paragraf">Have any questions? <strong class="hero__paragraf__strong">Contact Us</strong></p>
                     </form>
                     
-                    <p class="hero__paragraph">Have any questions? <a class="hero__link" href="#">Contact Us</a></p>
-                    
+                    <picture class="hero__picture">
+                        <source
+                        media="(max-width: 425px)"
+                        srcset="./images/her-mobile@1x.svg 1x, ./images/hero-mobile@2x.svg 2x"
+                        />
+                        
+                        <source
+                        media="(max-width: 768px)"
+                        srcset="./images/hero-tablet@1x.svg 1x, ./images/hero-tablet@2x.svg  2x"
+                        />
+                        <img
+                        class="hero__img" 
+                        src="./images/hero-phone.svg" 
+                        alt="The payment has been processed. The total amount deducted from your account is US $104.90."
+                        >
+                    </picture>
                 </div>
-                
-                <img
-                class="hero_image" 
-                src="./images/hero-phone.svg" 
-                alt="The payment has been processed. The total amount deducted from your account is US $104.90."
-                width="300"
-                height="500">
-                
             </div>
         </section>
         
@@ -128,28 +132,31 @@
         
         <section class="implement">
             <div class="container">
-                <div class="implement__box">
-                    <img 
-                    class="implement__image" 
-                    src="./images/implement.svg" 
-                    alt="Easy to implement"
-                    width=""
-                    height=""
-                    >
-                    
-                    <div class="implement__info">
-                        <h2 class="implement__heading">Easy to implement</h2>
-                        
-                        <p class="implement__paragraph">
-                            Our API comes with just a few lines of code.
-                            You’ll be up and running in no time.
-                            We built our documentation page to integrate payments functionality with ease.
-                        </p>
+                <div class="implement__inner">
+                    <div class="implement__inner__left">
+                        <picture class="implement__picture"> 
+                            <source
+                            media="(max-width: 425px)"
+                            srcset="./images/implement-mobile@1x.png 1x, ./images/implement-mobile@2x.png 2x"
+                            />
+                            
+                            <source
+                            media="(max-width: 768px)"
+                            srcset="./images/implement-tablet@1x.png 1x, ./images/implement-tablet@2x.png  2x"
+                            />
+                            <img class="implement__img" src="./images/implement.svg" 
+                            srcset="./images/implement@1x.svg 1x , ./images/implement@2x.svg 2x"
+                            alt="java script code's foto" 
+                            
+                            ></picture>
+                        </div>
+                        <div class="implement__inner__right">
+                            <h2 class="implement__heading">Easy to implement</h2>
+                            <P class="implement__paragraf">Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.</P>
+                        </div>
                     </div>
-                    
                 </div>
-            </div>
-        </section>
+            </section>
         
         <!-- Simple UI & UX -->
         
@@ -162,33 +169,28 @@
                         </p>
                     </div>
                     <div class="simple__inner__right">
+                        <picture class="simple__pictures">
+                            <img class="simple__img" src="./images/simple-1.png" alt="rasm tel"
+                            srcset="./images/simple1@1x.png 1x , ./images/simple1@2x.png 2x">
+                            
+                        </picture>
                         
-                        <img 
-                        class="simple__img" 
-                        src="./images/simple-1.png" 
-                        alt="rasm tel"
-                        width="300"
-                        height="500">
-                        
-                        <img 
-                        class="simple__img" 
-                        src="./images/simple-2.png" 
-                        alt="rasm tel"
-                        width="300"
-                        height="500">
-                        
+                        <picture class="simple__pictures">
+                            <img class="simple__img" src="./images/simple-2.png" alt="rasm tel"
+                            srcset="./images/simple2@1x.png 1x , ./images/simple2@2x.png 2x">
+                        </picture>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Benefits section  -->
+        <!--   Benefits section -->
         
         <section class="benefits">
             <div class="container">
                 <h2 class="visually-hidden">Our benefits </h2>
-                <ul class="benefits__list">
-                    <li class="benefits__item__first">
+                <ul class="benifits__list">
+                    <li class=" benifits__item benefits__item__first">
                         <h3 class="benefits__heading">Personal Finances</h3>
                         <p class="benefits__paragraph">
                             Consolidate financial data from multiple sources and categorize transactions up
@@ -196,7 +198,7 @@
                         </p>
                     </li>
                     
-                    <li class="benefits__item__second">
+                    <li class="benifits__item  benefits__item__second">
                         <h3 class="benefits__heading">Banking & Coverage</h3>
                         <p class="benefits__paragraph">
                             With our platform, you can speed up account onboarding and
@@ -204,7 +206,7 @@
                         </p>
                     </li>
                     
-                    <li class="benefits__item__third">
+                    <li class="benifits__item benefits__item__third">
                         <h3 class="benefits__heading">Consumer Payments</h3>
                         <p class="benefits__paragraph">
                             It’s easier to set up secure bank payments with us through a flo
@@ -223,20 +225,22 @@
             <div class="container">
                 <div  class="ready__inner">
                     <h2 class="ready__heading">Ready to start?</h2>
-                    <label class="hero__label">
+                    <form action="" class="form">
+                        <label class="hero__label">
                         
-                        <input
-                        class="hero__input hero__input__ready"
-                        type="email"
-                        placeholder="Enter email address"
-                        name="user_email"
-                        required
+                            <input
+                            class="hero__input"
+                            type="email"
+                            placeholder="Enter email address"
+                            name="user_email"
+                            required
                         
-                        />
-                        <button class="header__button hero__input__button"   type="button">
-                            <p class="header__button__paragraf">Schedule a Demo</p>
-                        </button>
-                    </div>
+                            />
+                            <button class="header__button hero__input__button"   type="submit">
+                                <p class="header__button__paragraf">Schedule a Demo</p>
+                            </button>
+                        </label>
+                    </form>
                 </div>
             </section>
         </main>

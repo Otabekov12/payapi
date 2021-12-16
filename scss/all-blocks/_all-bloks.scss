@@ -1,10 +1,20 @@
+@import "./container";
 @import "./header";
 @import "./nav";
-@import "./hero";
 @import "./button";
+@import "./hero";
 @import  "./about";
 @import  "./implement";
 @import "./simple";
 @import "./benefits";
 @import  "./ready";
 @import  "./footer";
+
+// Pricing
+
+@import "./pricing";
+@import "./plan";
+
+// About
+
+@import "./about-us";
